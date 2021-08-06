@@ -1,0 +1,61 @@
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas:
+      ". a a ."
+      ". a a .";
+  }
+  .item1 {
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .section1 {
+    font-family: "Poiret One";
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+  }
+  .section2 {
+    font-family: "Limelight";
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+  }
+  .section3 {
+    font-family: "WindSong";
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0rem;
+  }
+  
+  .section4 {
+    font-family: "Poiret One";
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  
+
+  .background1{
+    background-image: url("https://images.pexels.com/photos/33044/sunflower-sun-summer-yellow.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    filter: grayscale(50%) sepia(50%) contrast(2) brightness(0.1);
+    width: 100vw;
+    height: 100vh;
+    position: "absolute";
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;
+  }
